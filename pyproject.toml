@@ -1,0 +1,7 @@
+[project]
+name = "buddha-py"
+version = "0.1.0"
+description = "Small discord bot that returns quotes attributed to Buddha."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
