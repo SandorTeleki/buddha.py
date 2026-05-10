@@ -1,5 +1,5 @@
 # buddha.py
-Small discord bot that returns quotes attributed to Buddha.
+Small discord bot that returns quotes attributed to Buddha if certain words are mentioned in user messages.
 
 ## Prerequisistes:
 - Python 3.13+
