@@ -1,8 +1,10 @@
 import discord
 import os
 import logging
+import random
 from discord.ext import commands
 from dotenv import load_dotenv
+from quotes import QUOTES
 
 load_dotenv()
 token = os.getenv('TOKEN')
@@ -19,5 +21,14 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'We have logged in as {bot.user.name}!')
 
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    
+    if 'wisdom' in message.content.lower():
+        await message.channel.send(random.choice(QUOTES))
+
+    await bot.process_commands(message)
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
