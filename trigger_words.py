@@ -1,8 +1,8 @@
 TRIGGER_WORDS = [
-    'wisdom',
-    'enlighten',
     'buddha',
-    'peace',
+    'enlighten',
     'inspiration',
-    'knowledge'
+    'knowledge',
+    'peace',
+    'wisdom'
 ]
